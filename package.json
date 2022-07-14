@@ -1,0 +1,33 @@
+{
+    "name": "lybekk-css",
+    "version": "0.0.1",
+    "description": "This Is Not Sparta",
+    "main": "main.js",
+    "private": true,
+    "scripts": {
+      "start": "./dev-server.py",
+      "lint": "npx stylelint \"*.css\"",
+      "lint:fix": "npx stylelint \"*.css\" --fix",
+      "serve": "npm run start",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/lybekk/lybekk-css.git"
+    },
+    "keywords": [
+      "css",
+      "css variables"
+    ],
+    "author": "Christoffer Lybekk",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/lybekk/lybekk-css/issues"
+    },
+    "homepage": "https://github.com/lybekk/lybekk-css#readme",
+    "devDependencies": {
+      "stylelint": "^14.9.1",
+      "stylelint-config-standard": "^26.0.0"
+    }
+  }
+  

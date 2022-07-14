@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html data-theme="nord-light" lang="en">
+
+<head>
+	<title>This Is Not Sparta</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="lybekk.css" />
+    <script type="application/javascript" src="theme-switcher.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>Heading level 1</h1>
+        
+        <hr>
+        <theme-switcher></theme-switcher>
+        <hr>
+
+		<h2>Heading level 2</h2>
+
+        <blockquote>
+			Blockquote
+		</blockquote>
+
+		<h3>Heading level 3</h3>
+		<h4>Heading level 4</h4>
+		<h5>Heading level 5</h5>
+		<h6>Heading level 6</h6>
+
+        <blockquote>
+            Tip! Nav with anchors will be horizontal, while ul will be vertical
+        </blockquote>
+
+		<nav>
+			<a href="/">Nav</a>
+			<a href="#">with</a>
+			<a href="#">anchors (a)</a>
+		</nav>
+
+		<nav>
+			<ul>
+				<li><a href="#">Nav</a></li>
+				<li><a href="#">With</a></li>
+				<li><a href="#">Ul</a></li>
+			</ul>
+		</nav>
+
+        <nav>
+            <button>Nav</button>
+            <button>with</button>
+            <button>buttons</button>
+        </nav>
+	</header>
+
+	<main>
+		<section>
+			<h2>Section (h2)</h2>
+			<ul>
+				<li>
+					<p>Regular paragraph text</p>
+				</li>
+				<li>
+					<kbd>keyboard</kbd>
+				</li>
+				<li>
+					<mark>highlighted text</mark>
+				</li>
+				<li>
+					<em>emphasis</em>
+				</li>
+				<li>
+					<abbr title="Abbreviated form of a longer word or phrase">abbr</abbr>
+				</li>
+				<li>
+					<b>bold</b>
+				</li>
+				<li>
+					<code>sudo rm -rf /home/*</code>
+				</li>
+				<li>
+					<i>italic</i>
+				</li>
+				<li>
+					<s>strikethrough</s>
+				</li>
+				<li>
+					<dfn title="Hover for definition">definition (dfn)</dfn>
+				</li>
+				<li>
+					<q cite="lybekk.tech">quotation</q>
+				</li>
+				<li>
+					<samp>"samp" typically represents sample output from a computer programs</samp>
+				</li>
+				<li>
+					<small>small text</small>
+				</li>
+				<li>
+					<strong>strongly emphasized text</strong>
+				</li>
+				<li>
+					<sub>subscript</sub>
+				</li>
+				<li>
+					<sup>superscript</sup>
+				</li>
+				<li>
+					<u>underline</u>
+				</li>
+				<li>
+					<var>variable</var>
+				</li>
+			</ul>
+
+			<br></br>
+			<ruby>
+				annotation <rt> Ruby </rt>
+			</ruby>
+
+			<br />
+			<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+				<input type="range" id="a" value="50" /> +
+				<input type="number" id="b" value="100" /> =
+				<output name="result" for="a b"></output>
+				<br />
+				<textarea cols="60" rows="5">textarea - write here...</textarea>
+			</form>
+		</section>
+
+		<article>
+			<h2>Article element (h2)</h2>
+			<br />
+			<p>Right click this for a context menu (unsupported in many browsers)</p>
+			<menu type="context" id="contextmenu1">
+				<li>
+                    <button onclick="() => alert('Clicked!')">
+						menu item 1
+					</button>
+				</li>
+                <li>
+                    <button onclick="() => alert('Clicked!')">
+						menu item 2
+					</button>
+				</li>
+			</menu>
+			<br></br>
+			<p>Meter: <meter low="60" high="80" max="100" value="85">Very High</meter></p>
+			<p>Progress: <progress value="35" max="100"></progress></p>
+			<br></br>
+			<button onclick="toggleDialog(true)">Open dialog</button>
+			<dialog id="dialogTest">
+				<p>Are you sure you want to remove this item?</p>
+				<p>Dialog uses attribute "open"</p>
+				<button type="button" onclick="toggleDialog(false)">?</button>
+				<button type="button" onclick="toggleDialog(false)">Close</button>
+			</dialog>
+			<figure>
+				<img src="" alt="An image" />
+				<figcaption>Image - caption</figcaption>
+			</figure>
+		</article>
+
+		<ul>
+			<li>Unordered list</li>
+			<li>
+				<ins>Inserted text (ins)</ins>
+			</li>
+			<li>
+				<ins cite="something">Inserted text with cite attribute (ins)</ins>
+			</li>
+			<li>
+				<ins datetime="2020-12-17T01:55:55Z">Inserted text with datetime attribute (ins)</ins>
+			</li>
+			<li>
+				<del>deleted tag (del)</del>
+			</li>
+		</ul>
+
+		<ol>
+			<li>Ordered</li>
+			<li>List</li>
+		</ol>
+
+		<dl>
+			<dt>Definition list item</dt>
+			<dd>Description</dd>
+			<dt>term</dt>
+			<dd>definition</dd>
+		</dl>
+
+		<form>
+			<fieldset>
+				<legend>fieldset + legend</legend>
+				<label for="text-input">Text input:</label>
+				<input type="text" name="text-input" id="text-input" />
+			</fieldset>
+			<fieldset>
+				<legend align="bottom">fieldset + legend aligned bottom</legend>
+				<input type="checkbox" />
+			</fieldset>
+
+			<fieldset>
+
+				<select>
+					<optgroup label="OptGroup 1">
+						<option value="optgroup1item1">OptGroup 1 Item 1</option>
+						<option value="optgroup1item2">OptGroup 1 Item 2</option>
+					</optgroup>
+					<optgroup label="OptGroup 2">
+						<option value="optgroup2item1">OptGroup 2 Item 1</option>
+						<option value="optgroup2item2">OptGroup 2 Item 2</option>
+					</optgroup>
+				</select>
+
+				<br />
+
+				<input list="datalistitems" />
+				<datalist id="datalistitems">
+					<option value="datalist item 1" />
+					<option value="datalist item 2" />
+				</datalist>
+			</fieldset>
+
+			<hr>
+			</hr>
+			<input type="submit" value="Submit" />
+			<input type="reset" name="Reset" />
+		</form>
+
+		<article>
+			<pre>// Pre element
+				console.log('Preserve formatting');
+			</pre>
+		</article>
+
+		<article>
+			<table>
+				<caption style="caption-side: top; text-align: left;">
+                    Table caption - left aligned
+                </caption>
+				<thead>
+					<tr>
+						<th>Table</th>
+						<th>Headers</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<td colspan="2">Table footer</td>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td>row</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>row</td>
+						<td>2</td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+
+		<hr />
+
+		<section>
+			<button>Regular</button>
+			<button disabled>Disabled</button>
+		</section>
+	</main>
+
+	<aside>
+		aside
+		<details>
+			<summary>Summary/details</summary>
+			<p>Text appears</p>
+		</details>
+	</aside>
+
+	<footer>
+		<h6>Various (h6)</h6>
+		<time datetime="2016-12-31 12:00">31 Dec</time>
+		<address>address</address>
+		<cite>cite</cite>
+		<blockquote>blockquote</blockquote>
+	</footer>
+	<script>
+		const toggleDialog = value => {
+			const x = document.querySelector('#dialogTest')
+			x.open = value
+		}
+	</script>
+</body>
+
+</html>
